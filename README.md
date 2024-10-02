@@ -101,7 +101,7 @@ MerlinCSS est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 ---
 
 <p align="center">
-  Développé avec passion par l'équipe MerlinCSS
+  Développé avec passion par Merlin's Code
   <br>
   <img src="https://cdn.merlincode.fr/MERLIN_1.webp" alt="Logo MerlinCSS">
   <br>
