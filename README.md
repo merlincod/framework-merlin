@@ -10,7 +10,7 @@
 
 MerlinCSS est un framework CSS puissant et flexible conçu pour accélérer le développement de sites web modernes et responsives. Il offre une collection de composants prêts à l'emploi et d'utilitaires pour créer des interfaces utilisateur élégantes et fonctionnelles.
 
-![Site Demo](https://cdn.merlincode.fr)
+[Site Demo](https://cdn.merlincode.fr)
 
 ## Fonctionnalités principales
 
