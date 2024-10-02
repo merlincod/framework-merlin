@@ -1,0 +1,238 @@
+/* Merlin's CSS - Un framework CSS magique pour les jeunes devs */
+
+:root {
+    --couleur-principale: #007bff;
+    --couleur-secondaire: #6c757d;
+    --couleur-succes: #28a745;
+    --couleur-danger: #dc3545;
+    --couleur-avertissement: #ffc107;
+    --couleur-info: #17a2b8;
+    --couleur-claire: #f8f9fa;
+    --couleur-sombre: #343a40;
+    --police: 'Roboto', sans-serif;
+    --taille-texte: 16px;
+    --hauteur-ligne: 1.5;
+    --arrondi: 0.25rem;
+  }
+  
+  /* Reset*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--police);
+    font-size: var(--taille-texte);
+    line-height: var(--hauteur-ligne);
+    color: var(--couleur-sombre);
+    background-color: var(--couleur-claire);
+  }
+  
+  /* Typographie */
+  .titre-geant { font-size: 2.5rem; }
+  .titre-large { font-size: 2rem; }
+  .titre-moyen { font-size: 1.75rem; }
+  .titre-normal { font-size: 1.5rem; }
+  .titre-petit { font-size: 1.25rem; }
+  .sous-titre { font-size: 1rem; }
+  
+  .texte-magique {
+    margin-bottom: 1rem;
+  }
+  
+  .lien-enchante {
+    color: var(--couleur-principale);
+    text-decoration: none;
+  }
+  
+  .lien-enchante:hover {
+    text-decoration: underline;
+  }
+  
+  /* Grille flexible */
+  .conteneur-magique {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .rangee-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .colonne-flex {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  /* Colonnes*/
+  .col-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
+  .col-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
+  .col-3 { flex: 0 0 25%; max-width: 25%; }
+  .col-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+  .col-5 { flex: 0 0 41.666667%; max-width: 41.666667%; }
+  .col-6 { flex: 0 0 50%; max-width: 50%; }
+  .col-7 { flex: 0 0 58.333333%; max-width: 58.333333%; }
+  .col-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+  .col-9 { flex: 0 0 75%; max-width: 75%; }
+  .col-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
+  .col-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
+  .col-12 { flex: 0 0 100%; max-width: 100%; }
+  
+  /* Boutons */
+  .bouton {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: var(--arrondi);
+    transition: all 0.15s ease-in-out;
+  }
+  
+  .bouton-principal { background-color: var(--couleur-principale); color: #fff; }
+  .bouton-secondaire { background-color: var(--couleur-secondaire); color: #fff; }
+  .bouton-succes { background-color: var(--couleur-succes); color: #fff; }
+  .bouton-danger { background-color: var(--couleur-danger); color: #fff; }
+  
+  /* Formulaires */
+  .groupe-form {
+    margin-bottom: 1rem;
+  }
+  
+  .champ-magique {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: var(--arrondi);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  /* Alertes */
+  .alerte {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: var(--arrondi);
+  }
+  
+  .alerte-info { background-color: #cce5ff; border-color: #b8daff; color: #004085; }
+  .alerte-succes { background-color: #d4edda; border-color: #c3e6cb; color: #155724; }
+  .alerte-avertissement { background-color: #fff3cd; border-color: #ffeeba; color: #856404; }
+  .alerte-danger { background-color: #f8d7da; border-color: #f5c6cb; color: #721c24; }
+  
+  /* Navigation */
+  .barre-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: var(--couleur-claire);
+  }
+  
+  .logo-nav {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .menu-nav {
+    display: flex;
+    list-style: none;
+  }
+  
+  .lien-nav {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--couleur-sombre);
+    text-decoration: none;
+  }
+  
+  /* Cartes magiques */
+  .carte {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: var(--arrondi);
+  }
+  
+  .carte-corps {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+  }
+  
+  .carte-titre {
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Classes utilitaires magiques */
+  .texte-centre { text-align: center; }
+  .texte-gauche { text-align: left; }
+  .texte-droite { text-align: right; }
+  
+  .marge-haut-1 { margin-top: 0.25rem; }
+  .marge-haut-2 { margin-top: 0.5rem; }
+  .marge-haut-3 { margin-top: 1rem; }
+  .marge-haut-4 { margin-top: 1.5rem; }
+  .marge-haut-5 { margin-top: 3rem; }
+  
+  .marge-bas-1 { margin-bottom: 0.25rem; }
+  .marge-bas-2 { margin-bottom: 0.5rem; }
+  .marge-bas-3 { margin-bottom: 1rem; }
+  .marge-bas-4 { margin-bottom: 1.5rem; }
+  .marge-bas-5 { margin-bottom: 3rem; }
+  
+  .cache { display: none; }
+  .montre { display: block; }
+  .flex { display: flex; }
+  
+  .justifier-debut { justify-content: flex-start; }
+  .justifier-fin { justify-content: flex-end; }
+  .justifier-centre { justify-content: center; }
+  .justifier-entre { justify-content: space-between; }
+  .justifier-autour { justify-content: space-around; }
+  
+  .aligner-debut { align-items: flex-start; }
+  .aligner-fin { align-items: flex-end; }
+  .aligner-centre { align-items: center; }
+  .aligner-etirer { align-items: stretch; }
+  
+  /* Responsive  */
+  @media (max-width: 576px) {
+    .col-mobile-12 { flex: 0 0 100%; max-width: 100%; }
+  }
+  
+  @media (max-width: 768px) {
+    .col-tablette-6 { flex: 0 0 50%; max-width: 50%; }
+    .col-tablette-12 { flex: 0 0 100%; max-width: 100%; }
+  }
+  
+  @media (max-width: 992px) {
+    .col-portable-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+    .col-portable-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+  }
