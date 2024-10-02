@@ -1,186 +1,109 @@
-# 🧙‍♂️ Merlin's CSS - Le framework CSS magique et amélioré pour jeunes devs
+# MerlinCSS
 
-Bienvenue dans le monde enchanté de Merlin's CSS 2.0 ! Ce framework magique est conçu pour les jeunes développeurs qui veulent créer des sites web incroyables avec style et facilité.
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![license](https://img.shields.io/badge/license-MIT-green.svg)
+![compatibility](https://img.shields.io/badge/compatibility-modern%20browsers-brightgreen.svg)
 
-## ✨ Nouvelles fonctionnalités magiques
+> Un framework CSS moderne et efficace pour les développeurs web ambitieux.
 
-- 🎨 Palette de couleurs personnalisable et mode sombre
-- 📏 Grille flexible super responsive
-- 🔘 Boutons stylés avec effets de survol
-- 📝 Typographie élégante et liens animés
-- 🃏 Cartes magiques interactives
-- 🚨 Alertes mystiques avec icônes
-- 🧭 Barre de navigation enchantée et responsive
-- 🌈 Animations et transitions fluides
-- 📱 Classes utilitaires pour tous les écrans
-- 🎭 Nouveaux composants : Accordéon, Carrousel, Modal, Tooltip
-- ♿ Améliorations d'accessibilité
-- 🖨️ Styles d'impression
+## Aperçu
 
-## 🚀 Démarrage rapide
+MerlinCSS est un framework CSS puissant et flexible conçu pour accélérer le développement de sites web modernes et responsives. Il offre une collection de composants prêts à l'emploi et d'utilitaires pour créer des interfaces utilisateur élégantes et fonctionnelles.
 
-1. Téléchargez le fichier `MerlinCSS.css`
-2. Ajoutez-le à votre projet HTML :
+![Site Demo](https://cdn.merlincode.fr)
+
+## Fonctionnalités principales
+
+- 🎨 **Système de couleurs personnalisable**
+- 📏 **Grille flexible et responsive**
+- 🔘 **Composants d'interface utilisateur pré-stylés**
+- 📝 **Typographie optimisée**
+- 🃏 **Système de cartes pour la présentation de contenu**
+- 🚨 **Composants d'alerte et de notification**
+- 🧭 **Barre de navigation responsive**
+
+## Installation rapide
+
+1. Importez le CSS dans votre fichier HTML :
 
 ```html
-<link rel="stylesheet" href="chemin/vers/MerlinCSS.css">
+<link rel="stylesheet" href="cdn.merlincode.fr/MerlinCSS.css">
 ```
 
-3. Activez la magie en ajoutant la classe `merlin-css` à votre balise `<body>` :
+2. Commencez à utiliser les classes MerlinCSS dans votre HTML !
 
+## Exemples d'utilisation
+
+### Grille responsive
 ```html
-<body class="merlin-css">
-  <!-- Votre contenu magique ici -->
-</body>
-```
-
-4. Commencez à utiliser les classes magiques dans votre HTML !
-
-## 📚 Manuel d'utilisation
-
-### Grille flexible super responsive
-
-Créez des mises en page adaptatives avec notre système de grille amélioré :
-
-```html
-<div class="conteneur-magique">
-  <div class="rangee-flex">
-    <div class="colonne-flex col-12 col-md-6 col-lg-4">Colonne 1</div>
-    <div class="colonne-flex col-12 col-md-6 col-lg-4">Colonne 2</div>
-    <div class="colonne-flex col-12 col-md-6 col-lg-4">Colonne 3</div>
+<div class="conteneur">
+  <div class="rangee">
+    <div class="colonne col-6">Colonne 1</div>
+    <div class="colonne col-6">Colonne 2</div>
   </div>
 </div>
 ```
 
-### Boutons magiques améliorés
-
-Créez des boutons stylés avec effets de survol :
-
+### Boutons stylisés
 ```html
-<button class="bouton bouton-principal">Cliquez-moi !</button>
-<button class="bouton bouton-secondaire">Option secondaire</button>
-<button class="bouton bouton-accent">Accent magique</button>
+<button class="bouton bouton-principal">Action principale</button>
+<a href="#" class="bouton bouton-secondaire">Action secondaire</a>
 ```
 
-### Cartes magiques interactives
-
-Présentez votre contenu dans des cartes élégantes avec effets de survol :
-
+### Cartes
 ```html
 <div class="carte">
-  <img src="image.jpg" alt="Description" class="carte-image">
+  <img src="image.jpg" class="carte-image" alt="Description">
   <div class="carte-corps">
     <h5 class="carte-titre">Titre de la carte</h5>
     <p>Contenu de la carte...</p>
-    <button class="bouton bouton-principal">En savoir plus</button>
+    <button class="bouton bouton-accent">En savoir plus</button>
   </div>
 </div>
 ```
 
-### Nouveaux composants magiques
+## Personnalisation
 
-#### Accordéon
-
-```html
-<div class="accordeon">
-  <div class="accordeon-item">
-    <div class="accordeon-titre">Section 1</div>
-    <div class="accordeon-contenu">Contenu de la section 1...</div>
-  </div>
-  <div class="accordeon-item">
-    <div class="accordeon-titre">Section 2</div>
-    <div class="accordeon-contenu">Contenu de la section 2...</div>
-  </div>
-</div>
-```
-
-#### Carrousel
-
-```html
-<div class="carrousel">
-  <div class="carrousel-items">
-    <div class="carrousel-item">Slide 1</div>
-    <div class="carrousel-item">Slide 2</div>
-    <div class="carrousel-item">Slide 3</div>
-  </div>
-  <a href="#" class="carrousel-controle carrousel-controle-gauche">&#10094;</a>
-  <a href="#" class="carrousel-controle carrousel-controle-droite">&#10095;</a>
-</div>
-```
-
-#### Modal
-
-```html
-<button id="ouvrir-modal" class="bouton bouton-principal">Ouvrir Modal</button>
-
-<div id="mon-modal" class="modal">
-  <div class="modal-contenu">
-    <span class="fermer-modal">&times;</span>
-    <h2>Titre du Modal</h2>
-    <p>Contenu du modal...</p>
-  </div>
-</div>
-```
-
-#### Tooltip
-
-```html
-<div class="tooltip">
-  Survolez-moi
-  <span class="tooltip-text">Texte du tooltip</span>
-</div>
-```
-
-### Classes utilitaires magiques
-
-Utilisez nos classes utilitaires pour ajuster rapidement votre mise en page :
-
-- `.texte-centre`, `.texte-gauche`, `.texte-droite`
-- `.marge-haut-*`, `.marge-bas-*` (de 1 à 5)
-- `.cache`, `.montre`, `.flex`
-- `.justifier-*`, `.aligner-*`
-- `.anime-apparition`, `.anime-glissement`, `.anime-rotation`, `.anime-pulse`, `.anime-shake`
-
-### Mode sombre
-
-Activez le mode sombre en ajoutant la classe `mode-sombre` à votre balise `<body>` :
-
-```html
-<body class="merlin-css mode-sombre">
-  <!-- Votre contenu magique ici -->
-</body>
-```
-
-## 🛠️ Personnalisation
-
-Modifiez les variables CSS dans la section `:root` pour adapter Merlin's CSS à votre style :
+Adaptez MerlinCSS à votre charte graphique en modifiant les variables CSS :
 
 ```css
 :root {
-  --couleur-principale: #votre-couleur;
-  --police-principale: 'Votre Police', sans-serif;
-  --police-titre: 'Votre Police pour Titres', sans-serif;
-  /* ... */
+  --couleur-principale: #3498db;
+  --police-titre: 'Roboto', sans-serif;
+  /* Autres variables personnalisables */
 }
 ```
 
-## 📦 Technologies utilisées
+## Documentation complète
 
-- CSS3 🎨
-- Variables CSS 🔧
-- Flexbox 📏
-- Grid 🍱
-- Media Queries 📱
-- Animations et transitions CSS 🌟
+Pour une exploration approfondie de toutes les fonctionnalités de MerlinCSS, consultez notre [documentation complète](https://lien-vers-votre-doc.com).
 
-## 🤝 Contribution
+## Contribution
 
-Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request pour améliorer Merlin's CSS.
+Nous encourageons la contribution de la communauté pour améliorer MerlinCSS. Voici comment vous pouvez participer :
 
-## 📜 Licence
+1. Forkez le projet
+2. Créez votre branche (`git checkout -b feature/NouvelleFonctionnalite`)
+3. Committez vos changements (`git commit -am 'Ajout d'une nouvelle fonctionnalité'`)
+4. Pushez vers la branche (`git push origin feature/NouvelleFonctionnalite`)
+5. Ouvrez une Pull Request
 
-Merlin's CSS est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+## Licence
+
+MerlinCSS est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+
+## Remerciements
+
+- Merci à tous les contributeurs qui ont participé à l'amélioration de ce framework
+- Un grand merci à la communauté open-source pour son soutien continu
+- Inspiré par les meilleures pratiques de développement web moderne
 
 ---
 
-Créé avec ❤️ par Merlin's Code - Que la magie du CSS soit avec vous ! 🌟
+<p align="center">
+  Développé avec passion par l'équipe MerlinCSS
+  <br>
+  <img src="https://cdn.merlincode.fr/MERLIN_1.webp" alt="Logo MerlinCSS">
+  <br>
+  Construisez l'avenir du web avec MerlinCSS
+</p>
