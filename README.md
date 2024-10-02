@@ -76,7 +76,7 @@ Adaptez MerlinCSS à votre charte graphique en modifiant les variables CSS :
 
 ## Documentation complète
 
-Pour une exploration approfondie de toutes les fonctionnalités de MerlinCSS, consultez notre [documentation complète](https://lien-vers-votre-doc.com).
+Pour une exploration approfondie de toutes les fonctionnalités de MerlinCSS, consultez notre [documentation complète](https://cdn.merlincode.fr/index.html).
 
 ## Contribution
 
