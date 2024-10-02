@@ -27,7 +27,7 @@ MerlinCSS est un framework CSS puissant et flexible conçu pour accélérer le d
 1. Importez le CSS dans votre fichier HTML :
 
 ```html
-<link rel="stylesheet" href="cdn.merlincode.fr/MerlinCSS.css">
+<link rel="stylesheet" href="https://cdn.merlincode.fr/MerlinCSS.css">
 ```
 
 2. Commencez à utiliser les classes MerlinCSS dans votre HTML !
@@ -35,6 +35,7 @@ MerlinCSS est un framework CSS puissant et flexible conçu pour accélérer le d
 ## Exemples d'utilisation
 
 ### Grille responsive
+
 ```html
 <div class="conteneur">
   <div class="rangee">
@@ -45,12 +46,14 @@ MerlinCSS est un framework CSS puissant et flexible conçu pour accélérer le d
 ```
 
 ### Boutons stylisés
+
 ```html
 <button class="bouton bouton-principal">Action principale</button>
 <a href="#" class="bouton bouton-secondaire">Action secondaire</a>
 ```
 
 ### Cartes
+
 ```html
 <div class="carte">
   <img src="image.jpg" class="carte-image" alt="Description">
@@ -100,10 +103,8 @@ MerlinCSS est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ---
 
-<p align="center">
-  Développé avec passion par Merlin's Code
-  <br>
-  <img src="https://cdn.merlincode.fr/MERLIN_1.webp" alt="Logo MerlinCSS">
-  <br>
-  Construisez l'avenir du web avec MerlinCSS
-</p>
+Développé avec passion par Merlin's Code
+
+![Logo MerlinCSS](https://cdn.merlincode.fr/MERLIN_1.webp)
+
+Construisez l'avenir du web avec MerlinCSS
